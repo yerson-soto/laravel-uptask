@@ -4,6 +4,17 @@
     "Register": "Registrarse",
 
 
+    "New project": "Nuevo proyecto",
+    "Edit name": "Editar proyecto",
+    "Project name": "Titulo del proyecto",
+    "Enter the name of your project": "Introduce el nombre de tu proyecto",
+    "Add": "Agregar",
+    "Update": "Actualizar",
+
+
+    "The title cannot be empty": "El titulo no puede estar vacio",
+    "A project with this title already exists": "Ya existe un proyecto con este título",
+
 
 
 

@@ -1,6 +1,6 @@
 <nav>
     <a href="#">
-        {{ config('app.name', 'Uptask') }} | @lang('Task Manager')
+        {{ config('app.name', 'Uptask') }} | {{ (auth()->user()) ? auth()->user()->name : '' }}
     </a>
 
     <ul>
