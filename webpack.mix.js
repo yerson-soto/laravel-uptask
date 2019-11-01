@@ -13,3 +13,12 @@ const mix = require('laravel-mix');
 
 mix.react('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
+
+mix.disableNotifications();
+
+mix.browserSync('http://uptask.test');
+
+if (mix.inProduction()) {
+    mix.version();
+}
+

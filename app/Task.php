@@ -3,14 +3,24 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Project;
 
 class Task extends Model
 {
+
+    protected $hidden = [
+        'project_id'
+    ];
+
     protected $fillable = [
-        'name'
+        'name',
     ];
 
     protected $casts = [
-        'complete' => 'boolean'
+        'is_completed' => 'boolean'
     ];
+
+    public function project() {
+        return $this->belongsTo(Project::class);
+    }
 }

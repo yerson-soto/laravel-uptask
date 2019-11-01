@@ -3,6 +3,10 @@
 @section('main')
     lista de proyectos
     @foreach ($projects as $project)
-        {{ $project->title }}
+        <a href="{{ route('projects.show', $project) }}">{{ $project->title }}</a>
     @endforeach
+
+
 @endsection
+
+

@@ -20,7 +20,7 @@ class CreateTasksTable extends Migration
             $table->foreign('project_id')->references('id')->on('projects');
 
             $table->string('name')->unique();
-            $table->boolean('complete');
+            $table->boolean('is_completed')->default(false);
             $table->timestamps();
         });
     }

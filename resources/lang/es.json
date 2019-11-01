@@ -14,6 +14,8 @@
 
     "The title cannot be empty": "El titulo no puede estar vacio",
     "A project with this title already exists": "Ya existe un proyecto con este título",
+    "Add a name to your task": "Agrega un nombre a tu tarea",
+    "A task with this name already exists": "Ya existe una tarea con este nombre",
 
 
 

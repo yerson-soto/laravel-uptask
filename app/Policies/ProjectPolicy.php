@@ -68,28 +68,4 @@ class ProjectPolicy
         return $user->id === $project->user_id;
     }
 
-    /**
-     * Determine whether the user can restore the project.
-     *
-     * @param  \App\User  $user
-     * @param  \App\Project  $project
-     * @return mixed
-     */
-    public function restore(User $user, Project $project)
-    {
-        //
-    }
-
-    /**
-     * Determine whether the user can permanently delete the project.
-     *
-     * @param  \App\User  $user
-     * @param  \App\Project  $project
-     * @return mixed
-     */
-    public function forceDelete(User $user, Project $project)
-    {
-        //
-    }
-
 }

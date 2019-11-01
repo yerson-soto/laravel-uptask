@@ -9,4 +9,8 @@
             Eliminar
         </button>
     </form>
+
+    {{-- @include('projects._tasks', ['tasks' => $project->tasks]) --}}
+    <div id="tasks"></div>
+
 @endsection

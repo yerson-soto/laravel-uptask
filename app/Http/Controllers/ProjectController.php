@@ -12,7 +12,7 @@ class ProjectController extends Controller
 
     public function __construct()
     {
-        // $this->middleware(['auth' => 'verified']);
+        $this->middleware(['auth' => 'verified']);
     }
 
     /**
@@ -139,7 +139,6 @@ class ProjectController extends Controller
         $project->delete();
 
         // Redirect to projects index view
-        return redirect()->route('projects.index')
-                        ->with('message', __());
+        return redirect()->route('projects.index');
     }
 }

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Task;
 
 class Project extends Model
 {
@@ -10,5 +11,9 @@ class Project extends Model
 
     public function getRouteKeyName() {
         return 'slug';
+    }
+
+    public function tasks() {
+        return $this->hasMany(Task::class);
     }
 }
